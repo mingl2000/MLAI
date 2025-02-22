@@ -2,55 +2,47 @@
 ## Project Overview
 This data analysis project investigates factors influencing customer coupon acceptance using the UCI Machine Learning dataset containing various customer attributes and coupon context information. The analysis focuses on identifying key differences between customers who accept vs decline coupons, with special emphasis on bar coupons.
 
-## Dataset Description
-The dataset contains 12,684 observations with 26 features including:
-- User attributes (age, gender, income, occupation)
-- Contextual features (time, destination, weather)
-- Coupon attributes (type, expiration time)
-- Target variable (`Y` - acceptance status)
-
-Key coupon types analyzed:
-- Restaurants (<$20)
-- Coffee House
-- Carry out & Take away
-- Bar
-- Restaurants ($20-$50)
-
-## Key anaalysis steps
-Data Loading & Initial Exploration
-
-Missing Data Handling
-
-Overall Acceptance Rate Calculation
-
-Visual Analysis:
-
-Coupon type distribution
-
-Temperature distribution
-
-Bar Coupon Focus:
-
-Acceptance rate comparisons
-
-Visit frequency analysis
-
-Demographic comparisons
-
-Passenger/occupation relationships
 
 ## Key Findings
 
-Overall acceptance rate: 56.84%
-
-Bar Coupons:
-
-41% acceptance rate
-
-Highest acceptance from customers visiting bars ≤3 times/month
-
-Higher acceptance from non-farming occupations with adult passengers
-
 Significant missing data in car column (99.15%) and it's dropped from the analysis
 
-Temperature distribution shows majority of coupons issued in sunny day and 80F
+Overall coupon acceptance rate: 56.84%
+
+### Bar Coupons:
+
+    - Bar coupons acceptance rate for bar coupons is 41%
+
+    - High acceptance rate of bar coupons for the following drivers:
+
+        * Drivers visiting bars ≤3 times/month
+        * Drivers with non-farming occupations with adult passengers
+        * Drivers with 'Bachelors degree' or 'Some college - no degree'
+        * Drivers with income less than $62,500 or more than $100,000
+        * Drivers without kid
+
+    - High acceptance rate of bar coupons for the following occassions:
+        * Sunny day and 80F temperature
+        * When near lunch or dinner time.
+        * Coupon is expired in 1 day
+    
+    - Low acceptance rate of bar coupons for the following drivers:
+        * Drivers who went to bar 4 or more times a month
+        * Old drivers with 50+ years old
+        * Drivers with income between $62500-$9999 
+
+    - Low acceptance rate of bar coupons for the following occassions:
+       * When coupon is expired in 2 hours or less.
+       * When weather is not sunny or cold.
+
+### Other coupons:
+    - Very low acceptance rate for 'Coffee House' coupons
+
+
+
+
+
+
+
+
+
