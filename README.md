@@ -1,4 +1,4 @@
-# Coupon Acceptance Analysis
+# UCI Coupon Dataset Exploratory Data Analysis (EDA) 
 ## Project Overview
 This data analysis project investigates factors influencing customer coupon acceptance using the UCI Machine Learning dataset containing various customer attributes and coupon context information. The analysis focuses on identifying key differences between customers who accept vs decline coupons, with special emphasis on bar coupons.
 
